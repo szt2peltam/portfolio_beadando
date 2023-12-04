@@ -22,7 +22,9 @@
 }
 
 
-
+.green{
+  color: rgb(2, 184, 2);
+}
 *{
     margin: 0;
     padding: 0;
@@ -497,6 +499,12 @@ h1{
       padding-top: 30px;
     }
   }
+  @media screen and (max-width: 1283px) {
+    .introduction-text > div{
+      font-size: 32px;
+    }
+  }
+
   @media screen and (max-width: 583px) {
     .contact-picture > img{
       width: 300px;
@@ -517,3 +525,4 @@ h1{
       align-items: center;
     }
   }
+

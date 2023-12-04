@@ -7,15 +7,11 @@ export async function TypeTextIntoElement(element, text, subelement, speed){
     let subelementRef = document.querySelector(`.subelement-${subelementcount}`);
     subelementcount++;
     for (let index = 0; index < text.length; index++) {
-        if(text.slice(index,index+1) == " "){
-            subelementRef.innerHTML += '&nbsp;'
-            await new Promise(r => setTimeout(r,speed));
-        }else{
 
-            subelementRef.innerText += text.slice(index,index+1);
+            subelementRef.textContent += text.slice(index,index+1);
             await new Promise(r => setTimeout(r,speed));
 
-        }
+        
     }
 
 
